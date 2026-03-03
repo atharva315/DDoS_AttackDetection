@@ -1,0 +1,8 @@
+
+1. Start app.py
+2. Go to web server
+3. sudo hping3 --flood --rand-source < your IP >       
+4. Refresh webpage
+
+
+ (Realtime still need optimization)
