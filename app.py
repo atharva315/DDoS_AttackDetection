@@ -12,7 +12,7 @@ import joblib
 import threading
 import sys
 from scapy.all import sniff
-from flask import Flask, request, render_template, jsonify
+
 
 # Discover available model files (*.pkl) in the project root
 MODEL_FILES = { }
@@ -68,8 +68,7 @@ elif MODEL_FILES:
 else:
     print("Warning: no .pkl model files found. Prediction will be disabled until a model is added.")
 
-# Flask app initialization
-app = Flask(__name__)
+
 
 # Define constants and global variables
 TIME_WINDOW = 10  # Time window in seconds
